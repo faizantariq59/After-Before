@@ -1,0 +1,54 @@
+button{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+     /* height: 50px;
+    width: 100px; */
+}
+button::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50px;
+   top: -10px;
+   left: -45px;
+   transform: rotate(120deg);
+   background-color: aliceblue;
+   transition: all 0.3s linear;
+}
+button:hover:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50px;
+   top: 10px;
+   left: 70px;
+   transform: rotate(120deg);
+   background-color: aliceblue;
+   /* transition: all 0.3s; */
+}
+button::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50px;
+   bottom: -10px;
+  right: -45px;
+   transform: rotate(120deg);
+   /* background-color: ; */
+   background-color: rgba(204, 113, 113, 0.3);
+   transition: all 0.3s linear;
+}
+button:hover:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50px;
+   bottom: 10px;
+   right: 70px;
+   transform: rotate(120deg);
+   background-color: rgba(191, 129, 129, 0.3);
+   /* transition: all 0.3s; */
+}
